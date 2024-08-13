@@ -8,7 +8,8 @@ const routes: Routes = [
     path: '',
     children: [
       { path: 'confirm', component: ConfirmPageComponent },
-      { path: 'cancel', component: CancelPageComponent }
+      { path: 'cancel', component: CancelPageComponent },
+      { path: '**', redirectTo: 'confirm' }
     ]
   }
 ];
